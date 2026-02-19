@@ -1,0 +1,18 @@
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=10 > checkpoint/log/3DPC-R2/log-10.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=20 > checkpoint/log/3DPC-R2/log-20.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=50 > checkpoint/log/3DPC-R2/log-50.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=100 > checkpoint/log/3DPC-R2/log-100.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=200 > checkpoint/log/3DPC-R2/log-200.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=500 > checkpoint/log/3DPC-R2/log-500.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=1000 > checkpoint/log/3DPC-R2/log-1000.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=1500 > checkpoint/log/3DPC-R2/log-1500.txt
+
+python3 main/main_ood.py --config=config/GAN/OOD-GAN-3DPC-R2.yaml --n_ood=2000 > checkpoint/log/3DPC-R2/log-2000.txt

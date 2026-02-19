@@ -1,0 +1,47 @@
+dataset:
+  dset: CIFAR10-SVHN
+  is_within_dset: False
+  ind: null
+  ood: null
+
+path:
+  root_dir: checkpoint/
+  pretrained_dir: checkpoint/pretrained/
+  sample_dir: checkpoint/OOD-Sample/
+
+experiment:
+  method: WOOD
+  regime: Balanced
+  observed_cls: null
+
+model:
+  D: "DenseNet"
+  D_config:
+    depth: 100
+  # D: DC_D
+  # D_config: null
+  G: null
+  G_config: null
+
+dset_info:
+  img_info:
+    H: 32
+    W: 32
+    C: 3
+  num_class: 10
+
+train_config:
+  mc: 1
+  max_epochs: 80
+  bsz_tri: 50
+  bsz_val: 64 # this is not used in general
+  beta: 0.1 # WOOD balancing factor
+  ood_bsz: 10
+  optimizer:
+    lr: 0.001
+    beta1: 0.9
+    beta2: 0.999
+
+eval_config:
+  each_cls: False
+  cls_idx:

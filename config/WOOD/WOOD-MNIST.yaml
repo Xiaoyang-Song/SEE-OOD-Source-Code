@@ -1,0 +1,44 @@
+dataset:
+  dset: MNIST
+  is_within_dset: True
+  ind: [2, 3, 6, 8, 9]
+  ood: [1, 7]
+
+path:
+  root_dir: ../checkpoint/WOOD-Test/
+  pretrained_dir: ../checkpoint/pretrained/
+
+experiment:
+  method: WOOD
+  regime: Balanced
+  observed_cls: null
+
+n_ood: 16
+
+dset_info:
+  img_info:
+    H: 28
+    W: 28
+    C: 1
+  num_class: 5
+
+model:
+  D: "DenseNet"
+  D_config:
+    depth: 100
+  G: null
+  G_config: null
+
+train_config:
+  mc: 3
+  max_epochs: 100
+  bsz_tri: 32
+  bsz_val: 64 # this is not used in general
+  optimizer:
+    lr: 0.001
+    beta1: 0.9
+    beta2: 0.999
+
+eval_config:
+  each_cls: True
+  cls_idx: [1, 7]

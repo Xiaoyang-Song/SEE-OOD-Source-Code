@@ -1,0 +1,34 @@
+__pycache__/
+.DS_Store
+# ignored folders
+# geomloss/
+Datasets/
+# Packages.txt
+packages.txt
+todo.md
+
+events.*
+# checkpoint/
+
+Greatlake.md
+questions.md
+res/
+
+
+model.t7
+dcd.pt
+model-[64]-[15]-[2].pt
+other/
+
+# simulation example
+ckpt/
+simulation_log/
+checkpoint/Simulation/SETTING-1/
+checkpoint/OOD-GAN
+checkpoint/WOOD
+
+checkpoint/OOD-Sample/CIFAR10-SVHN
+checkpoint/OOD-Sample/SVHN
+checkpoint/OOD-Sample/MNIST
+checkpoint/OOD-Sample/MNIST-FashionMNIST
+checkpoint/OOD-Sample/FashionMNIST
