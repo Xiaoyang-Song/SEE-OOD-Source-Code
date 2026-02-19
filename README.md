@@ -77,7 +77,7 @@ Users with our recommended Linux OS or HPCs should not have this issue as the fi
 
 In general, the order and commands for training and evaluating the proposed SEE-OOD model is provided below.
 
-0. **Note:** we have provided all the experimental results and checkpoints in this repository, so if you only want to reproduce the results from the checkpoints, you may directly go to step 4 and run the commands without any problem. However, if you have run steps 1 - 3 rp reproduce from scratch, you must wait until it finishes to run step 4.
+0. **Note:** we have provided all the experimental results and checkpoints in this repository, so if you only want to reproduce the results from the checkpoints, you may directly go to step 4 and run the commands without any problem. However, if you have run steps 1 - 3 to reproduce from scratch, you must wait until it finishes to run step 4.
 
 1. **Setup:** Determine experimental setup and configuration, including which regime and the number of OoD samples exposed during training. Below, we use Regime-I _FashionMNIST_ experiment with 32 observed OoD samples as an example.
 
