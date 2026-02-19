@@ -1,4 +1,6 @@
 
+import sys
+sys.path.append('../')
 from ood_gan import *
 from models.dc_gan_model import *
 from dataset import *
